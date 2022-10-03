@@ -1,4 +1,5 @@
 #Fruits in Ascii:
+#Testing of comment
 apple_ascii = '''
            .:'
          __ :'__
