@@ -89,7 +89,7 @@ quanitiy = 0
 total_received = 0
 change_received = 0
 
-#Menu options
+#menu items for customers to choose from
 print("1.Shaved Ice - $5", "\n2.Smoothie - $6", "\n3.Ice Cream - $4", "\n4.Aguas de fruta(fruit drinks) - $2","\n5.Payment", "\n6.Exit \n")
 
 #this loop continues while the condition is true
@@ -130,8 +130,8 @@ while (1):
             elif (menu_item == 6):
                     quit()
            
-                      #if customer selects number outside of range, he is prompted to type valid option
-                      else:
+            #if customer selects number outside of range, he is prompted to type valid option
+            else:
                     print("Please enter a valid option (1-5): ")
     
 
