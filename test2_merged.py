@@ -1,3 +1,5 @@
+#Welcome to Fruta Raspada
+
 import inquirer
 from datetime import date 
 
@@ -47,9 +49,11 @@ pear_ascii = '''
 today = date.today()
 print("Today's date:", today)
 print(" \n")
+
 print("Welcome to Fruta Raspada!\n")
 name = input("What is your name? ")
 print("Hello " + name + ", are you ready to order a fruit flavor ? \n")
+
 #Ask user for name and fruit choice
 userReply = input("Enter yes or no: \n").lower()
      
