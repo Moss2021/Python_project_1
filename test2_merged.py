@@ -82,7 +82,7 @@ print(" \n")
 print("Ok! Please choose what you want to do with the fruit! (type 1 to 4)\n(type 5 for PAYMENT or type 6 to EXIT )")
 print(" \n")   
 
-Initialize values of variables:
+#Initialize values of variables:
 menu_item=0
 sale = 0
 quanitiy = 0
@@ -102,19 +102,19 @@ while (1):
                 quantity = int(input("Enter the quantity: "))
                 sale = sale + 5 * quantity
 
-            elif (c == 2):
+            elif (menu_item == 2):
                 quantity = int(input("Enter the quantity: ")) 
                 sale = sale + 6 * quantity
 
-            elif (c == 3):
+            elif (menu_item == 3):
                 quantity = int(input("Enter the quantity: "))
                 sale = sale + 4 * quantity
 
-            elif (c == 4):
+            elif (menu_item == 4):
                 quantity = int(input("Enter the quantity: "))
                 sale = sale + 2 * quantity
                       
-            #when customer is finished ordering, the toal sale is calculated
+            #when customer is finished ordering, the total sale is calculated
             elif (menu_item == 5):
                 print("Total Sale:", sale)
                 if (sale > 0):
@@ -124,10 +124,13 @@ while (1):
                     print("Your change: ", total_received - sale)
                     print("*****Thank You Come Again!!!*****")
                     quit()
-            #customer wants to end order
+                      
+            #when customer wants to end order
             elif (menu_item == 6):
                     quit()
-            else:
+           
+                      #if customer selects number outside of range, he is prompted to type valid option
+                      else:
                     print("Please enter a valid option (1-5): ")
     
 
