@@ -89,6 +89,7 @@ quanitiy = 0
 total_received = 0
 change_received = 0
 
+#Menu options
 print("1.Shaved Ice - $5", "\n2.Smoothie - $6", "\n3.Ice Cream - $4", "\n4.Aguas de fruta(fruit drinks) - $2","\n5.Payment", "\n6.Exit \n")
 
 #this loop continues while the condition is true
