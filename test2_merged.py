@@ -99,8 +99,12 @@ print("1.Shaved Ice - $5", "\n2.Smoothie - $6", "\n3.Ice Cream - $4", "\n4.Aguas
 #this loop continues while the condition is true
 while (1):
 
+            #fail-safe in case invalid choice is input
+            try:          
             #Menu's choice & quantity determine the sale amount
-            menu_item = int(input("Please type the number of your choice: "))
+                menu_item = int(input("Please type the number of your choice: "))
+            except:
+                menu_item = int(input("Please type the number of your choice: ")) 
 
             if (menu_item == 1):
 
