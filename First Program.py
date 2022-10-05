@@ -1,5 +1,5 @@
 #Initialize values of variables:
-menu_item = 0
+menu_item=0
 sale = 0
 quantity = 0
 total_received = 0
@@ -9,13 +9,15 @@ print("1.Shaved Ice - $5", "\n2.Smoothie - $6", "\n3.Ice Cream - $4", "\n4.Aguas
 
 #this loop continues while the condition is true
 while (1):
-           
+            #fail-safe in case invalid choice is input
+            try:          
             #Menu's choice & quantity determine the sale amount
-            menu_item = int(input("Please type the number of your choice: "))
-                           
+                menu_item = int(input("Please type the number of your choice: "))
+            except:
+                menu_item = int(input("Please type the number of your choice: ")) 
+                            
             if (menu_item == 1):
-
-                quantity = int(input("Enter the quantity: "))
+                quantity = int(input("Enter the quantity: "))  
                 sale = sale + 5 * quantity
 
             elif (menu_item == 2):
@@ -41,12 +43,11 @@ while (1):
                     print("*****Thank You Come Again!!!*****")
                     quit()
                       
-                #when customer wants to end order
-                elif (menu_item == 6):
-                    quit()
+            #when customer wants to end order
+            elif (menu_item == 6):
+                print("Have a nice day!")
+                quit()
            
-                #if customer selects number outside of range, he is prompted to type valid option
-                else:
-                    print("Please enter a valid option (1-5): ")
-
-    
+            #if customer selects number outside of range, he is prompted to type valid option
+            else:
+                print("Please enter a valid option (1-5): ")
